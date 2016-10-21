@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+      <title></title>
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="http://www.tuzig.com/theme/css/styles.css"/>
+      <meta charset="utf-8" />
+      <link href="http://www.tuzig.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title=" Atom Feed" />
+    <script src="//use.typekit.net/hil6qlr.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+  </head>
+
+  <body id="index">
+    <!-- header -->
+    <header class="siteheader">
+      <!-- site image -->
+        <div class= "siteimage">
+          <a class="nodec" href="/">
+            <img width="237" height="99" src="/images/tuzig_logo.png">
+          </a>
+        </div>
+
+      <div class = "sitebanner">
+        <h2 class ="sitesubtitle">Building Fires in The Cloud</h2>
+        <!-- nav -->
+        <nav class="menu">
+          <ul>
+            <!-- menu items-->
+            <li>
+              <a href="/pages/me.html">Me</a>
+            </li>
+            <li>
+              <a href="/pages/bio.html">Bio</a>
+            </li>
+            <li>
+              <a href="/pages/philanthropy.html">Philanthropy</a>
+            </li>
+            <li>
+              <a href="/pages/services.html">Services</a>
+            </li>
+            <li>
+              <a href="/pages/colophone.html">Colophone</a>
+            </li>
+            <!--pages-->
+            <!--categories-->
+                <li class="active"><a href="http://www.tuzig.com/category/blog.html">Blog</a></li>
+            </ul>
+        </nav>
+      </div> <!-- sitebanner -->
+    </header>
+
+    <!-- content -->
+
+<section class="content">
+
+  <h3 class="posttitle">
+    <a class="nodec" href="/freeing-a-yuck.html" rel="bookmark" title="Permalink to Freeing a Yuck">
+      Freeing a Yuck
+    </a>
+  </h3>
+
+  <div class="postinfo">
+    <p class="published" title="2016-06-03T01:00:00+00:00">
+      ו' 03 יוני 2016
+    </p>
+
+  </div><!-- .postinfo -->
+
+  <div class="article">
+    <h1>Freeing a Yack</h1>
+<p>[ Written as reply to <a href="https://medium.com/u/2a5400d58707">Alon Nisser</a> post: "<a href="https://medium.com/@alonisser/i-toggled-public-now-what-6b42959db251#.e8vt352qf">I toggled public, now what?</a>" ]  </p>
+<p>A couple of weeks ago, I walked into the CEO's office for a chat.<br />
+We've talked about what we should do next, now that we've completed opening the legacy DB with an API. Dan called it getting our Yack on the truck and it freaked me.</p>
+<p><img alt="A Wild Yack" src="https://cdn-images-1.medium.com/max/800/1*z5udGDTt7uL5VINRClZLdw.jpeg" /></p>
+<p>Imagine, after a lot of pushing and shoving, finally you got the wild yack on the track and you're driving a truck with a poor Yack at the back cage and with no idea where you're going.  </p>
+<p>Not only that, you feel the Yack is visited by more people and it becomes the center piece in many conversations and presentation. It behaves so well, It's tempting to forget it's is still a wild beast, with tons of bugs and very few tests. I'm sure the beast can - and probably will - kick me in the head.  </p>
+<p>Not only that, the Yack has a <strong>Bus Factor</strong> of just one, yours truly, so I hit the breaks and start working on the locks to free the beast. I wrote a README, chose a license and pushed the repo to github (we were using bitbucket before).  </p>
+<p>Usually, the license is critical as it establishes the relationships between the contributors and the copyright holder. If it was my choise, I'd pick the 3-clause BSD license of Django, as it's very short - 27 lines- and free, but this time around it didn't feel right.  </p>
+<p>I ended up choosing the dreaded Aferro GPLv3, a lengthy legal doc, just 5 lines short of the number of the beast. I once met its author, St IGNUcius of the Church of Emacs, and asked him if there was no way to make it shorter. It made him angry. HOORAY! (Imagine myself, a humble worshiper of sed's visual mode, poking a finger in the eye of that pompous emacs user)  </p>
+<p>Anyways, I picked his license, as at the end of the day, The Museum is an Israeli Non profit founded in 1978 and there is no chance it will fall into the hands of some greedy lawyers that will decide to take the code private or sue contributors. IMHO, when you're sure the copyright holder will never be a kniving corporation, the license is not that important.  </p>
+<h2>So I toggled public.</h2>
+<p>Next came a pull request from Alon that helped me with that damn grunt (I know, gulp is better, if you can help, <a href="https://github.com/Beit-Hatfutsot/dbs-front">feel free to fork</a>).  </p>
+<p>Next, Alon shared with me his post. In it I found a bug: the default API server is localhost:5000 which no one except Inna, my co-developer, and Myself have, as we didn't release the server code yet.  </p>
+<p>I changed the default to our test server in devapi.dbs.bh.org.il and as Alon requested, started working with Niko (QA) and Nurit (the boss) on getting the issues over from Jira Hell.</p>
+<p>As of now we have 61 open issues and 31 we already closed. We also customized the labels a bit and have a couple of Milestones we use to prioritize issues.  </p>
+<p>I'm not yet sure what the open source community is getting from all of this and frankly, I don't really care. It's been great for the team and for now, that's all that matters.</p>
+  </div><!-- .content -->
+
+</section>
+
+
+    <!-- footer -->
+    <footer>
+        <ul class="links menu">
+        <!-- services icons -->
+          <li><a class="nodec fa fa-github-alt" href="https://github.com/daonb"></a></li>
+          <li><a class="nodec fa fa-twitter" href="https://twitter.com/daonb"></a></li>
+          <li><a class="nodec fa fa-linkedin" href="https://il.linkedin.com/in/daonb"></a></li>
+          <li><a class="nodec fa fa-camera" href="https://flickr.com/daonb"></a></li>
+          <li><a class="nodec fa fa-facebook" href="https://www.facebook.com/daonb"></a></li>
+          <li><a class="nodec fa fa-rss" href="http://www.tuzig.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"></a></li>
+      </ul>
+      <p>
+      © Tuzig LTD
+      <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+        unless otherwise noted.
+        Generated by <a href= "http://docs.getpelican.com/">Pelican</a> with
+        <a href="http://github.com/porterjamesj/crowsfoot">crowsfoot</a> theme.
+      </p>
+    </footer>
+  </body>
+</html>

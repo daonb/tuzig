@@ -31,6 +31,9 @@
               <a href="/pages/me.html">Me</a>
             </li>
             <li>
+              <a href="/pages/bio.html">Bio</a>
+            </li>
+            <li>
               <a href="/pages/philanthropy.html">Philanthropy</a>
             </li>
             <li>
@@ -41,7 +44,7 @@
             </li>
             <!--pages-->
             <!--categories-->
-                <li><a href="http://www.tuzig.com/category/blog.html">blog</a></li>
+                <li><a href="http://www.tuzig.com/category/blog.html">Blog</a></li>
             </ul>
         </nav>
       </div> <!-- sitebanner -->
@@ -55,6 +58,179 @@
 
     <li class="post">
         <header class="posttitle">
+          <h3><a href="http://www.tuzig.com/a-museums-first-hackathon.html"
+                  rel="bookmark"
+                  class="nodec"
+                  title="Permalink to A Museum's First Hackathon">A Museum's First Hackathon</a>
+          </h3>
+        </header>
+
+        <div class="postinfo">
+          <p class="published" title="2016-09-01T11:59:00+00:00"> ה' 01 ספטמבר 2016 </p>
+        </div><!-- /.postinfo -->
+
+        <div class="postsummary"> <p>It's been an interesting first year of freelancing at The Museum of
+The Jewish People.  I wrote a lot of code, released quite a few versions
+and met some very good people.</p>
+<p>Together we've opened some of the code of our databases site, published an
+<a href="http://devapi.dbs.bh.org.il/v1/docs">API</a> and started
+using creative commons licenses. We're now probably the most advanced Museum
+in Israel when it comes to digital assets and we keep pushing that envelope.</p>
+<p>So when I met Daphne in a <em>Django Girls</em> meetup and heard about HackExtend
+I offered to help and make it happen at the Museum.</p>
+<h2>AND IT'S HAPPENING!</h2>
+<p>In a fortnight, at the 15-16/9/2016, I'll be hacking in the first ever
+HackExtend right here, at Beit-Hatfutsot - The Museum of The Jewish People - and the hit is on.  The Museum's have put a lot of time into this and I have to prove
+It's worth it, so we can have many more Hackathon's at our excellent
+facilities - two auditorium with 100 &amp; 200 seats, 10 class rooms and the gardens
+of Tel Aviv University.</p>
+<p>My original plan was to prepare a lot of <a href="https://github.com/Beit-Hatfutsot/dbs-front/labels/beginner">beginner issues</a> and help people
+install the environment, pick an issue, fix it and submit a pull request.
+It's all very nice but after the pre-hackathon meetup last Friday,
+I understood these tasks don't fit those that are a part of a team as teams
+need a project.  So we've banged our heads together and came with four small
+projects that are we'd love to have and are fun to develop.</p>
+<p>Here they are for your consideration,  ordered from the dullest to the coolest:</p>
+<h3>Admin Interface</h3>
+<p>We have registered users and we have roles, but no way to manage them.
+When I need to make someone an <em>editor</em> I have to launch the python shell on
+the server and run a couple of commands.  While it's been fun playing with the
+shell, we can really use and Admin interface to manage users and roles.</p>
+<p>This project needs a bit of UX design, frontend (preferably angular 2) and some
+backend (flask-user).</p>
+<h3>My Story revamp</h3>
+<p>We have a section on the site where registered users can collect items
+, group them in branches and share them with the world. It works - 
+here's <a href="http://test.dbs.bh.org.il/story/2e775e50cffbe657e7179569822f002b">my story</a>
+- but it needs some serious face lifting.</p>
+<p>We need to name branches automatically based on the Place &amp; Family the user searched for.
+Good branch names will allow us to improve our 'Related' links which are now
+terrible (based on elasticsearch's more-like-this feature) as we can find
+related items in users' branches i.e. For 'Paris' the related items are
+those that appear in more then one branch named <em>Paris</em>.</p>
+<p>At the display front, we need to let the user control the order of the
+cards - i.e. put my grandmother's card first - and possibly over their size.
+It'll also be nice to let users customize as much of the display as possible -
+many of the users will be kids, researching their family roots, and they
+love customizing.</p>
+<p>And we need to make it easier to put items directly into the branch I'm
+currently researching.</p>
+<p>This project needs UX design and angular 1.4 coding on our frontend.  Netta, our
+resident designer, will help, explaining UI guidelines and sharing photoshop
+files.</p>
+<h3>Family Tree Creator</h3>
+<p>So far we've only developed a <em>read</em> interface to the family trees and users
+are demanding a way to create and edit trees.  A Creation interface is simpler
+so we want to focus on that as the first step, allowing registered users to 
+create their own tree.</p>
+<p>The challenge here is to use the interface you develop to create a complex tree,
+like <a href="https://he.wikipedia.org/wiki/%D7%AA%D7%91%D7%A0%D7%99%D7%AA:%D7%90%D7%99%D7%9C%D7%9F_%D7%99%D7%95%D7%97%D7%A1%D7%99%D7%9F_%D7%A9%D7%9C_%D7%93%D7%9E%D7%95%D7%99%D7%95%D7%AA_%D7%A1%D7%A4%D7%A8_%D7%91%D7%A8%D7%90%D7%A9%D7%99%D7%AA">the one from Genesis</a>.</p>
+<h3>Visitors Visualization for the Physical World</h3>
+<p>At the entrance to the Museum we have a wall with 9 screens forming a 16:9
+rectangle with a diagonal of 126 inches.  It currently shows clips from Jewish
+Weddings and we want to replace it with a live world map of visitor to the site
+and the content viewed.  The winning visualization will run on that wall and
+will put a small plaque with the names of the team members.</p>
+<p>The logs are published using <a href="https://cloud.google.com/pubsub/docs/overview">google's pub/sub</a>
+service and ip to geo seems straight forward enough -  I installed locally
+<a href="https://github.com/fiorix/freegeoip">freegeoip</a> and it works like a charm.</p>
+<p>This will require some creative UX/UI design, simple backend and a small webapp,
+preferably using angular 2.</p>
+<h1>See you at HackExtend!</h1> </div>
+    </li>
+    <li class="post">
+        <header class="posttitle">
+          <h3><a href="http://www.tuzig.com/freeing-a-yuck.html"
+                  rel="bookmark"
+                  class="nodec"
+                  title="Permalink to Freeing a Yuck">Freeing a Yuck</a>
+          </h3>
+        </header>
+
+        <div class="postinfo">
+          <p class="published" title="2016-06-03T01:00:00+00:00"> ו' 03 יוני 2016 </p>
+        </div><!-- /.postinfo -->
+
+        <div class="postsummary"> <h1>Freeing a Yack</h1>
+<p>[ Written as reply to <a href="https://medium.com/u/2a5400d58707">Alon Nisser</a> post: "<a href="https://medium.com/@alonisser/i-toggled-public-now-what-6b42959db251#.e8vt352qf">I toggled public, now what?</a>" ]  </p>
+<p>A couple of weeks ago, I walked into the CEO's office for a chat.<br />
+We've talked about what we should do next, now that we've completed opening the legacy DB with an API. Dan called it getting our Yack on the truck and it freaked me.</p>
+<p><img alt="A Wild Yack" src="https://cdn-images-1.medium.com/max/800/1*z5udGDTt7uL5VINRClZLdw.jpeg" /></p>
+<p>Imagine, after a lot of pushing and shoving, finally you got the wild yack on the track and you're driving a truck with a poor Yack at the back cage and with no idea where you're going.  </p>
+<p>Not only that, you feel the Yack is visited by more people and it becomes the center piece in many conversations and presentation. It behaves so well, It's tempting to forget it's is still a wild beast, with tons of bugs and very few tests. I'm sure the beast can - and probably will - kick me in the head.  </p>
+<p>Not only that, the Yack has a <strong>Bus Factor</strong> of just one, yours truly, so I hit the breaks and start working on the locks to free the beast. I wrote a README, chose a license and pushed the repo to github (we were using bitbucket before).  </p>
+<p>Usually, the license is critical as it establishes the relationships between the contributors and the copyright holder. If it was my choise, I'd pick the 3-clause BSD license of Django, as it's very short - 27 lines- and free, but this time around it didn't feel right.  </p>
+<p>I ended up choosing the dreaded Aferro GPLv3, a lengthy legal doc, just 5 lines short of the number of the beast. I once met its author, St IGNUcius of the Church of Emacs, and asked him if there was no way to make it shorter. It made him angry. HOORAY! (Imagine myself, a humble worshiper of sed's visual mode, poking a finger in the eye of that pompous emacs user)  </p>
+<p>Anyways, I picked his license, as at the end of the day, The Museum is an Israeli Non profit founded in 1978 and there is no chance it will fall into the hands of some greedy lawyers that will decide to take the code private or sue contributors. IMHO, when you're sure the copyright holder will never be a kniving corporation, the license is not that important.  </p>
+<h2>So I toggled public.</h2>
+<p>Next came a pull request from Alon that helped me with that damn grunt (I know, gulp is better, if you can help, <a href="https://github.com/Beit-Hatfutsot/dbs-front">feel free to fork</a>).  </p>
+<p>Next, Alon shared with me his post. In it I found a bug: the default API server is localhost:5000 which no one except Inna, my co-developer, and Myself have, as we didn't release the server code yet.  </p>
+<p>I changed the default to our test server in devapi.dbs.bh.org.il and as Alon requested, started working with Niko (QA) and Nurit (the boss) on getting the issues over from Jira Hell.</p>
+<p>As of now we have 61 open issues and 31 we already closed. We also customized the labels a bit and have a couple of Milestones we use to prioritize issues.  </p>
+<p>I'm not yet sure what the open source community is getting from all of this and frankly, I don't really care. It's been great for the team and for now, that's all that matters.</p> </div>
+    </li>
+    <li class="post">
+        <header class="posttitle">
+          <h3><a href="http://www.tuzig.com/taking-the-edge-of-the-edge.html"
+                  rel="bookmark"
+                  class="nodec"
+                  title="Permalink to Taking the edge of The Edge">Taking the edge of The Edge</a>
+          </h3>
+        </header>
+
+        <div class="postinfo">
+          <p class="published" title="2015-10-08T23:59:00+00:00"> ה' 08 אוקטובר 2015 </p>
+        </div><!-- /.postinfo -->
+
+        <div class="postsummary"> <p>It's not easy living next to the edge.  True, I am not on the edge itself,
+lucky for me The Edge is an hour drive away.  The Edge is the name of a mosque
+in Jerusalem from which a terror wave broke out about a week ago.</p>
+<p>Today it reached us.  At 3 PM, a terrorist stabbed 4 Israelies in
+central Tel Aviv just a couple of miles from my home.  It is scary especially as
+our leaders can hardly find their ass hole with both hands.</p>
+<p>It reminds me of the dark days of "The Split Screen" in 2002
+when TV news had to use a split screen to track the sucide bombings and
+of 1994 when the street next to my home was closed for hours becuase the Rabbis
+had to make sure there's no piece of human flesh left on any of the trees.</p>
+<p>This time it's diffrent (ain't it always?).  The terrorists have only knives
+and it's clear there is no driving organization behind this. It's people who
+wake up one morning and decide to get a knife and hit the streets of
+Israeli cities and kill as many jews as possible.</p>
+<p>Like it normally does, the terror wave started in the heart of Jerusalem at
+The Edge Mosque at Temple Mount.  The same tiny place (150,000 m2) humans
+have been fighting over for 3 millenias and a torn in every empires' back since
+the days of the babylonians.</p>
+<p><img alt="Jerusalem Topology" src="http://geographyeducationdotorg.files.wordpress.com/2013/06/holylandelevation.jpg?w=593&amp;h=466" /></p>
+<blockquote>
+<p>The Temple Mount forms the northern portion of a very narrow spur of hill that
+slopes sharply downward from north to south. Rising above the Kidron Valley to
+the east and Tyropoeon Valley to the west,[13] its peak reaches a height of 740
+m (2,428 ft) above sea level.[14] In around 19 BCE, Herod the Great extended the
+Mount's natural plateau by enclosing the area with four massive retaining walls
+and filling the voids. This artificial expansion resulted in a large flat
+expanse which today forms the eastern section of the Old City of Jerusalem. The
+trapezium shaped platform measures 488 m along the west, 470 m along the east,
+315 m along the north and 280 m along the south, giving a total area
+of approximately 150,000 m2 (37 acres). (wikipedia)</p>
+</blockquote>
+<p>There has to be topological reason this place to be so precious and I believe
+the map above has some pretty convincing clues. First, an easy slope west &amp; down
+to the sea makes it the eastern most city connected to the mediterranean ports and cities.
+Second, the lowest place on earth is just to the East with a drop 3,800 ft. from the city
+forming a steep barrier between Jerusalem and the near East.</p>
+<p>The Profit gave The Edge it's fitting name - coming from the east it sure
+looks like the edge, separating east from west.</p>
+<p>The terror we're wittensing is a result of a clash between east and west.
+It has a new social structure and a new communication network in the from of
+the Interent and we must use the power of the network to lower the flames.</p>
+<p>, the shape of social netwroks on the Internet that
+spread hatered and motivate young people to become terrorists.
+The Internet helps the is powerful weapon and in the hands </p>
+<p>south I'll soon have to join guard duty at my girl's kindergarten.</p>
+<p><a href="http://www.generationword.com/jerusalem101/17-millo-jebusite-wall.html">Ancient Times</a></p> </div>
+    </li>
+    <li class="post">
+        <header class="posttitle">
           <h3><a href="http://www.tuzig.com/fear-and-loathing-in-israel.html"
                   rel="bookmark"
                   class="nodec"
@@ -63,7 +239,7 @@
         </header>
 
         <div class="postinfo">
-          <p class="published" title="2015-03-18T09:00:00+00:00"> Wed 18 March 2015 </p>
+          <p class="published" title="2015-03-18T09:00:00+00:00"> ד' 18 מרץ 2015 </p>
         </div><!-- /.postinfo -->
 
         <div class="postsummary"> <p>By now, you’ve probably heard about the ugly elections we had in Israel. It's the third time in six years that I’ve been called to vote, and every time I’ve contributed long hours to develop open source tools helping voters make intelligent decisions.</p>
@@ -87,7 +263,7 @@
         </header>
 
         <div class="postinfo">
-          <p class="published" title="2014-06-26T09:00:00+00:00"> Thu 26 June 2014 </p>
+          <p class="published" title="2014-06-26T09:00:00+00:00"> ה' 26 יוני 2014 </p>
         </div><!-- /.postinfo -->
 
         <div class="postsummary"> <blockquote>
@@ -118,7 +294,7 @@ The internet can't help fs the mobile fire-hose of information is quite a distra
         </header>
 
         <div class="postinfo">
-          <p class="published" title="2014-03-18T00:30:00+00:00"> Tue 18 March 2014 </p>
+          <p class="published" title="2014-03-18T00:30:00+00:00"> ג' 18 מרץ 2014 </p>
         </div><!-- /.postinfo -->
 
         <div class="postsummary"> 
@@ -146,7 +322,7 @@ The internet can't help fs the mobile fire-hose of information is quite a distra
         </header>
 
         <div class="postinfo">
-          <p class="published" title="2014-03-17T22:50:00+00:00"> Mon 17 March 2014 </p>
+          <p class="published" title="2014-03-17T22:50:00+00:00"> ב' 17 מרץ 2014 </p>
         </div><!-- /.postinfo -->
 
         <div class="postsummary"> 
@@ -167,7 +343,7 @@ The internet can't help fs the mobile fire-hose of information is quite a distra
         </header>
 
         <div class="postinfo">
-          <p class="published" title="2010-04-14T12:30:00+00:00"> Wed 14 April 2010 </p>
+          <p class="published" title="2010-04-14T12:30:00+00:00"> ד' 14 אפריל 2010 </p>
         </div><!-- /.postinfo -->
 
         <div class="postsummary"> 
@@ -186,7 +362,7 @@ I'm just back from a great Open Knesset meetup. There were seven of us, a pool t
         </header>
 
         <div class="postinfo">
-          <p class="published" title="2008-09-21T22:50:00+00:00"> Sun 21 September 2008 </p>
+          <p class="published" title="2008-09-21T22:50:00+00:00"> א' 21 ספטמבר 2008 </p>
         </div><!-- /.postinfo -->
 
         <div class="postsummary"> 
